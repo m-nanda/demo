@@ -15,6 +15,6 @@ The repository contains the following files and directories:
   - `case_5_.py`: an example answer for `case_5.py`.  
   - `run.sh`: script to run all case with answer.  
   - `test.py`: python script to check availability and version of timeseries and library.  
+- `background_check_summary.ipynb`: notebook that show the visualized summary and sample data.  
 - `background_check.py`: python script to read response from google sheet and build the visualized summary of it.  
-- `.ipynb`: notebook that show the visualized summary and sample data.  
 - `requirements.txt`: main requirements to running files in `src/`  
