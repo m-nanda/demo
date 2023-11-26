@@ -1,7 +1,53 @@
 import sys
+print(f"Python version: {sys.version}")
 
-print(sys.version)
+try:
+    import numpy as np
+    print("numpy version:", np.__version__)
+except:
+    print("numpy is not installed")
 
-import numpy as np
+try:
+    import pandas as pd
+    print("pandas version:", pd.__version__)
+except:
+    print("pandas is not installed")
 
-print(np.__version__)
+try:
+    import Pillow
+    print("Pillow version:", Pillow.__version__)
+except:
+    print("Pillow is not installed")
+
+try:
+    import scipy
+    print("scipy version:", scipy.__version__)
+except:
+    print("scipy is not installed")
+
+try:
+    import tensorflow as tf
+    print("tensorflow version:", tf.__version__)
+except:
+    print("tensorflow is not installed")
+
+try:
+    import tf.data.Dataset as tfds
+    print("tfds version:", tfds.__version__)
+except:
+    print("tensorflow-datasets is not installed")
+
+try:
+    lib_version = [
+        np.__version__=="1.24.3",
+        pd.__version__=="2.0.3",
+        Pillow.__version__=="10.0.0",
+        scipy.__version__=="1.10.1",
+        tf.__version__=="2.13.0",
+        tfds.__version__=="4.9.2"
+    ]
+
+    if all(lib_version):
+        print("All main dependencies are ready!")
+except:
+    pass
