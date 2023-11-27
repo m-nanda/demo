@@ -14,8 +14,8 @@ except:
     print("pandas is not installed")
 
 try:
-    import Pillow
-    print("Pillow version:", Pillow.__version__)
+    import PIL
+    print("Pillow version:", PIL.__version__)
 except:
     print("Pillow is not installed")
 
@@ -32,7 +32,7 @@ except:
     print("tensorflow is not installed")
 
 try:
-    import tf.data.Dataset as tfds
+    import tensorflow_datasets as tfds
     print("tfds version:", tfds.__version__)
 except:
     print("tensorflow-datasets is not installed")
@@ -41,7 +41,7 @@ try:
     lib_version = [
         np.__version__=="1.24.3",
         pd.__version__=="2.0.3",
-        Pillow.__version__=="10.0.0",
+        PIL.__version__=="10.0.0",
         scipy.__version__=="1.10.1",
         tf.__version__=="2.13.0",
         tfds.__version__=="4.9.2"
